@@ -1,0 +1,155 @@
+<article>
+    <section>
+        <div class="container">
+            <div class="row my-5">
+                <div class="col-lg-3 col-sm-12">
+                    <ul id="myTab" role="tablist" class="d-flex flex-lg-column flex-sm-row">
+                        <li class="nav-item mb-1" role="presentation">
+                            <a class="nav-link active  fw-semibold page-admin-current rounded-2 me-2 p-2"
+                                id="capnhat-tab" data-bs-toggle="tab" data-bs-target="#capnhat-tab-pane" type="button"
+                                role="tab" aria-controls="capnhat-tab-pane" aria-selected="true"><i
+                                    class="fa-solid fa-pen-to-square text-secondary me-2"></i>Cập nhật hồ sơ</a>
+                        </li>
+
+                        <li class="nav-item mb-1" role="presentation">
+                            <a class="nav-link fw-semibold rounded-2 me-2 p-2 page-link-admin " id="danhsach-tab"
+                                data-bs-toggle="tab" data-bs-target="#danhsach-tab-pane" type="button" role="tab"
+                                aria-controls="danhsach-tab-pane" aria-selected="false"><i
+                                    class="fa-solid fa-table-list  text-secondary me-2"></i>Đơn hàng</a>
+                        </li>
+                        <li class="nav-item mb-1" role="presentation" ng-click="logout()">
+                            <a class="nav-link fw-semibold rounded-2 me-2 p-2 page-link-admin " type="button" role="tab"
+                                aria-selected="false"><i
+                                    class="fa-solid fa-right-from-bracket text-secondary me-2"></i>Đăng suất</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-9 col-sm-12">
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="capnhat-tab-pane" role="tabpanel"
+                            aria-labelledby="capnhat-tab" tabindex="0">
+                            <h3 class="text-secondary mb-4">Cập nhật tài khoản</h3>
+                            <div class="row">
+                                <div class="col-lg-8 col-12">
+                                    <form>
+                                        <label class="form-label fw-semibold">Email</label>
+                                        <input type="email" placeholder="Email" class="form-control mb-4">
+                                        <label class="form-label fw-semibold">Tên tài khoản</label>
+                                        <input type="text" placeholder="Tên tài khoản" class="form-control mb-4">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <label class="form-label fw-semibold">Họ và tên</label>
+                                                <input type="text" placeholder="Họ và tên"
+                                                    class="form-control mb-4">
+                                            </div>
+                                            <div class="col-6">
+                                                <label class="form-label fw-semibold">Số điện thoại</label>
+                                                <input type="text" placeholder="Số điện thoại"
+                                                    class="form-control mb-4">
+                                            </div>
+                                        </div>
+                                        <label class="form-label fw-semibold">Địa chỉ</label>
+                                        <input type="text" placeholder="Địa chỉ" class="form-control mb-4"
+                                           >
+
+                                        <button
+                                            class="btn-buynow-detail btn btn-lg border-0 text-light fw-semibold bg-secondary"
+                                            style="width: 150px;">Cập nhật</button>
+                                    </form>
+                                </div>
+                                <div class="col-lg-4 col-12 d-flex flex-column justify-content-center">
+                                    <img src="{{getimageuserupdate()}}" class="w-75 mx-auto mb-4" id="imgbase64" alt="">
+                                    <input type="file" id="fileInput" class="form-control" accept="image/*">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="danhsach-tab-pane" role="tabpanel" aria-labelledby="danhsach-tab"
+                            tabindex="0">
+                            <div class="p-0 m-0">
+                                <h3 class="text-secondary mb-4">Đơn hàng</h3>
+                                <table class="table table-bordered text-center" style="font-size: 14px;">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-start">Id</th>
+                                            <th>Người đặt</th>
+                                            <th>Email đặt</th>
+                                            <th>Địa chỉ đặt</th>
+                                            <th>Ngày đặt</th>
+                                            <th>Trạng thái</th>
+                                            <th>Thao tác</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="align-middle">
+                                            <td>
+                                                1
+                                            </td>
+                                            <td>Đỗ Tuấn Kiệt</td>
+                                            <td>
+                                                kiet@gmail.com
+                                            </td>
+                                            <td>
+                                                Bến Tre
+                                            </td>
+                                            <td>
+                                                23-4-2024
+                                            </td>
+                                            <td>
+                                                Chờ thanh toán
+                                            </td>
+                                            <td>
+                                                <i
+                                                    class="fa-solid fa-eye text-info me-2"></i>
+                                                |
+                                                <i
+                                                    class="fa-solid fa-trash-can text-danger ms-2"></i>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="p-0 m-0">
+                                <h3 class="text-secondary mb-4">Đơn hàng chi tiết</h3>
+                                <table class="table table-bordered text-center"
+                                style="font-size: 14px;">
+                                <thead>
+                                    <tr>
+                                        <th class="text-start">Thông tin sản phẩm</th>
+                                        <th>Đơn giá</th>
+                                        <th>Số lượng</th>
+                                        <th>Thành tiền</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="align-middle">
+                                        <td class="d-flex align-items-center">
+                                            <img src="" height="100px" width="100px" alt="">
+                                            <div class="text-start ms-2">
+                                                <p class="m-0">Áo thun nam</p>
+                                                <p class="m-0">Đen/S</p>
+
+                                            </div>
+                                        </td>
+                                        <td>300.000<span class="text-decoration-underline">đ</span></td>
+                                        <td>
+                                            2
+                                        </td>
+                                        <td>300.000<span
+                                                class="text-decoration-underline">đ</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="w-100 d-flex justify-content-between">
+                                <button
+                                    class="btn btn-primary text-light bg-secondary my-4 py-2 fw-semibold border-0 btn-checkout px-5">Xem
+                                    đơn hàng khác</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</article>

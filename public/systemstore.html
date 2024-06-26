@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="bg-body">
+        <div class="top-header">
+            <div class="container d-flex h-100 align-items-center justify-content-evenly">
+                <img src="images/logo.webp" alt="" class="img-fluid logo">
+                <form class="d-flex" role="search">
+                    <input class="form-control border-0 rounded-end-0 rounded-start-5 ps-4" type="search"
+                        placeholder="Tìm kiếm sản phẩm bạn mong muốn" aria-label="Search">
+                    <button class="btn btn-primary border-0 bg-primary rounded-end-5 rounded-start-0" type="submit"><i
+                            class="fa-solid fa-magnifying-glass text-light pe-2"></i></button>
+                </form>
+                <div class="dropdown d-lg-none ms-2">
+                    <button class="btn bg-secondary p-0 border-0" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <i class="fa-regular fa-user fs-5 mb-0 me-2 text-light"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="login.html">Đăng nhập</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="register.html">Đăng ký</a></li>
+                    </ul>
+                </div>
+
+                <div class="position-relative d-flex align-items-center">
+                    <div class="d-lg-flex d-none text-light align-items-center">
+                        <i class="fa-regular fa-user fs-5 mb-0 me-2"></i>
+                        <a class="p-0 m-0 text-light text-decoration-none" href="login.html">Đăng nhập</a>
+                        <p class="p-0 m-0 mx-1">/</p>
+                        <a class="p-0 m-0 text-light text-decoration-none" href="register.html">Đăng ký</a>
+                        <p class="p-0 m-0 fs-4 mx-3">|</p>
+                    </div>
+                    <a href="cart.html">
+                        <i class="fa-solid fa-basket-shopping fs-5 text-light"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            3
+                            <span class="visually-hidden">unread messages</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg menu bg-body">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav gap-3 ms-5 me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-secondary" aria-current="page" href="home.html">
+                                Trang chủ
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-secondary" href="product.html" role="button"
+                                aria-expanded="false">
+                                Sản phẩm
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Bé nam</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Bé nữ</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary" href="contact.html">Liên hệ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary" href="news.html">Tin tức</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary" href="systemstore.html">
+                                <div class="current-page d-none d-lg-block"></div>
+                                Hệ thống của hàng
+                            </a>
+                          </li>
+                    </ul>
+                </div>
+                <div class="hotline d-flex align-items-center me-5">
+                    <div class="fw-normal fs-3 me-4">|</div>
+                    <i class="fa-solid fa-phone-volume me-2"></i>
+                    <div class=" me-2">Hotline: </div>
+                    <a class="nav-link">1900 6750</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <article>
+        <section class="systemstore my-5">
+            <div class="container">
+                <div class="row mx-5">
+                    <div class="system-info rounded-4">
+                        <div class="row align-items-center py-3">
+                            <div class="col-lg-4 col-12">
+                                <div class="system-item d-flex align-items-center mb-3 mb-lg-0 justify-content-center">
+                                    <i class="fa-solid fa-store icon-systemstore me-2"></i>
+                                    <div>
+                                        <p class="mb-1 fw-medium">Hệ thống 8 cửa hàng</p>
+                                        <p class="mb-0 fw-medium">Trên toàn quốc</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-12">
+                                <div class="system-item d-flex align-items-center mb-3 mb-lg-0 justify-content-center">
+                                    <i class="fa-solid fa-users icon-systemstore me-2"></i>
+                                    <div>
+                                        <p class="mb-1 fw-medium">Hơn 100 nhân viên</p>
+                                        <p class="mb-0 fw-medium">Để phục vụ quý khách</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-12">
+                                <div class="system-item d-flex align-items-center justify-content-center">
+                                    <i class="fa-solid fa-clock icon-systemstore me-2"></i>
+                                    <div>
+                                        <p class="mb-1 fw-medium">Mở cửa từ 8h đến 22h</p>
+                                        <p class="mb-0 fw-medium">cả chủ nhật & Lễ Tết</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-5 mt-5">
+                    <div class="col-12 col-lg-4">
+                        <div class="systemstoreaddress text-14">
+                            <div class="row systemstore-form rounded-2 p-2">
+                                <div class="col-6 col-lg-12 col-xl-6">
+                                    <label for="province" class="form-label">Tỉnh/Thành phố</label>
+                                    <select name="" id="province" class="form-select text-14">
+                                        <option value="1">Hồ Chí Minh</option>
+                                        <option value="2">Hà Nội</option>
+                                        <option value="3">Đằng Nẵng</option>
+                                        <option value="4">Cần Thơ</option>
+                                        <option value="5">Hải Phòng</option>
+                                        <option value="6">Bến Tre</option>
+                                    </select>
+                                </div>
+                                <div class="col-6 col-lg-12 col-xl-6">
+                                    <label for="province" class="form-label">Tên cửa hàng</label>
+                                    <input type="text" class="form-control text-14" placeholder="Nhập tên cửa hàng">
+                                </div>
+                                <div class="col-6"></div>
+                            </div>
+                            <div class="row p-2 rounded-2 system-direct py-3 mt-3">
+                                <h6 class="text-secondary fw-semibold">Alena Sài Gòn</h6>
+                                <div class="d-flex align-items-center my-2">
+                                    <i class="fa-solid fa-location-dot me-2 text-secondary fs-5"></i>
+                                    <p class="mb-0">Tầng 3, 70 Lữ Gia, Phường 15, Quận 11, Thành phố Hồ Chí Minh</p>
+                                </div>
+                                <div class="d-flex align-items-center my-2">
+                                    <i class="fa-solid fa-phone me-2 text-secondary fs-5"></i>
+                                    <p class="mb-0">1900 6750</p>
+                                </div>
+                                <button
+                                    class="btn btn-outline-danger text-secondary mt-2 ms-2 w-50 rounded-4 btn-direct">
+                                    <i class="fa-solid fa-location-arrow me-2"></i>
+                                    Chỉ đường
+                                </button>
+                            </div>
+                            <div class="row p-2 rounded-2 system-direct py-3 mt-3">
+                                <h6 class="text-secondary fw-semibold">Alena Hà Nội</h6>
+                                <div class="d-flex align-items-center my-2">
+                                    <i class="fa-solid fa-location-dot me-2 text-secondary fs-5"></i>
+                                    <p class="mb-0">Tầng 3, 70 Lữ Gia, Phường 15, Quận 11, Thành phố Hồ Chí Minh</p>
+                                </div>
+                                <div class="d-flex align-items-center my-2">
+                                    <i class="fa-solid fa-phone me-2 text-secondary fs-5"></i>
+                                    <p class="mb-0">1900 6750</p>
+                                </div>
+                                <button
+                                    class="btn btn-outline-danger text-secondary mt-2 ms-2 w-50 rounded-4 btn-direct">
+                                    <i class="fa-solid fa-location-arrow me-2"></i>
+                                    Chỉ đường
+                                </button>
+                            </div>
+                            <div class="row p-2 rounded-2 system-direct py-3 mt-3">
+                                <h6 class="text-secondary fw-semibold">Alena Đà Nẵng</h6>
+                                <div class="d-flex align-items-center my-2">
+                                    <i class="fa-solid fa-location-dot me-2 text-secondary fs-5"></i>
+                                    <p class="mb-0">Tầng 3, 70 Lữ Gia, Phường 15, Quận 11, Thành phố Hồ Chí Minh</p>
+                                </div>
+                                <div class="d-flex align-items-center my-2">
+                                    <i class="fa-solid fa-phone me-2 text-secondary fs-5"></i>
+                                    <p class="mb-0">1900 6750</p>
+                                </div>
+                                <button
+                                    class="btn btn-outline-danger text-secondary mt-2 ms-2 w-50 rounded-4 btn-direct">
+                                    <i class="fa-solid fa-location-arrow me-2"></i>
+                                    Chỉ đường
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-8 mt-3 mt-lg-0">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.443592406485!2d106.62525347451808!3d10.853826357762367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752bee0b0ef9e5%3A0x5b4da59e47aa97a8!2zQ8O0bmcgVmnDqm4gUGjhuqduIE3hu4FtIFF1YW5nIFRydW5n!5e0!3m2!1svi!2s!4v1710935421662!5m2!1svi!2s"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" class="rounded-2"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-primary search-promotion d-flex align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-12 my-auto ">
+                        <h4 class=" fs-6 text-light fw-bold p-0 m-lg-0 mb-2">NHẬP THÔNG TIN KHUYẾN MÃI TỪ CHÚNG TÔI</h4>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <form class="d-flex gap-0" role="search">
+                            <input class="form-control h-100 mx-0" type="search" placeholder="Nhập email của bạn"
+                                aria-label="Search">
+                            <button class="btn btn-outline-success h-100 text-light fw-bold  mx-0"
+                                type="submit">Gửi</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-7">
+                    <img src="images/logo.webp" alt="">
+                    <h3 class="text-primary fs-5 my-3">Shop Thời trang và phụ kiện Alena</h3>
+                    <div class="row align-items-center mb-3">
+                        <div class="col-1">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="col-11">
+                            <p class="m-0 ms-2">Tầng 6, Tòa nhà Ladeco, 266 Đội Cấn, Phường Liễu Giai, Quận Ba Đình, TP
+                                Hà Nội</p>
+                        </div>
+                    </div>
+                    <div class="row align-items-center mb-3">
+                        <div class="col-1">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <div class="col-11">
+                            <p class="m-0 ms-2">Giờ làm việc: Từ 9:00 đến 22:00 các ngày trong tuần từ Thứ 2 đến Chủ
+                                nhật</p>
+                        </div>
+                    </div>
+                    <div class="row align-items-center mb-3">
+                        <div class="col-1">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="col-11">
+                            <p class=" m-0 ms-2">Hotline</p>
+                            <h3 class="text-primary fs-5 m-0 ms-2">1900 6750</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-5">
+                    <div class="text-light fw-bold mt-2">Về chúng tôi</div>
+                    <ul class="p-0 mt-3">
+                        <li class="mb-2"><a href="">Trang chủ</a></li>
+                        <li class="mb-2"><a href="">Sản phẩm áo</a></li>
+                        <li class="mb-2"><a href="">Quấn áo</a></li>
+                        <li class="mb-2"><a href="">Phụ kiện</a></li>
+                        <li class="mb-2"><a href="">Giới thiệu</a></li>
+                        <li class="mb-2"><a href="">Liên hệ</a></li>
+                        <li class="mb-2"><a href="">Tin tức</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-7">
+                    <div class="text-light fw-bold mt-2">Hỗ trợ khách hàng</div>
+                    <ul class="p-0 mt-3">
+                        <li class="mb-2"><a href="">Chính sách đối tác</a></li>
+                        <li class="mb-2"><a href="">Chính sách đổi trả</a></li>
+                        <li class="mb-2"><a href="">Chính sách thanh toán</a></li>
+                        <li class="mb-2"><a href="">Chính sách giao hàng</a></li>
+                        <li class="mb-2"><a href="">Khiếu nại</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-5">
+                    <div class="text-light fw-bold mt-2">Dịch vụ</div>
+                    <ul class="p-0 mt-3">
+                        <li class="mb-2"><a href="">Tư vấn</a></li>
+                        <li class="mb-2"><a href="">Mua hàng</a></li>
+                        <li class="mb-2"><a href="">Giao hàng</a></li>
+                        <li class="mb-2"><a href="">Khuyến mãi</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="offset-xl-10 col-xl-2 offset-lg-9 col-lg-3 offset-md-7 col-md-5">
+                    <i class="fa-brands fa-youtube me-1"></i>
+                    <i class="fa-brands fa-instagram mx-1"></i>
+                    <i class="fa-brands fa-facebook-f mx-1"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/b1f196da8e.js" crossorigin="anonymous"></script>
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="javascipt.js"></script>
+</body>
+
+</html>

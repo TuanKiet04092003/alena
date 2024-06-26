@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="bg-body">
+    <div class="top-header">
+      <div class="container d-flex h-100 align-items-center justify-content-evenly">
+        <img src="images/logo.webp" alt="" class="img-fluid logo">
+        <form class="d-flex" role="search">
+          <input class="form-control border-0 rounded-end-0 rounded-start-5 ps-4" type="search"
+            placeholder="Tìm kiếm sản phẩm bạn mong muốn" aria-label="Search">
+          <button class="btn btn-primary border-0 bg-primary rounded-end-5 rounded-start-0" type="submit"><i
+              class="fa-solid fa-magnifying-glass text-light pe-2"></i></button>
+        </form>
+        <div class="dropdown d-lg-none ms-2">
+          <button class="btn bg-secondary p-0 border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-regular fa-user fs-5 mb-0 me-2 text-light"></i>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="login.html">Đăng nhập</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="register.html">Đăng ký</a></li>
+          </ul>
+        </div>
+
+        <div class="position-relative d-flex align-items-center">
+          <div class="d-lg-flex d-none text-light align-items-center">
+            <i class="fa-regular fa-user fs-5 mb-0 me-2"></i>
+            <a class="p-0 m-0 text-light text-decoration-none" href="login.html">Đăng nhập</a>
+            <p class="p-0 m-0 mx-1">/</p>
+            <a class="p-0 m-0 text-light text-decoration-none" href="register.html">Đăng ký</a>
+            <p class="p-0 m-0 fs-4 mx-3">|</p>
+          </div>
+          <a href="cart.html">
+            <i class="fa-solid fa-basket-shopping fs-5 text-light"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              3
+              <span class="visually-hidden">unread messages</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg menu bg-body">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav gap-3 ms-5 me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-secondary" aria-current="page" href="home.html">
+                <div class="current-page d-none d-lg-block"></div>
+                Trang chủ
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-secondary" role="button" aria-expanded="false"
+                href="product.html">
+                Sản phẩm
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Bé nam</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Bé nữ</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="contact.html">Liên hệ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="news.html">Tin tức</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="systemstore.html">Hệ thống của hàng</a>
+            </li>
+          </ul>
+        </div>
+        <div class="hotline d-flex align-items-center me-5">
+          <div class="fw-normal fs-3 me-4">|</div>
+          <i class="fa-solid fa-phone-volume me-2"></i>
+          <div class=" me-2">Hotline: </div>
+          <a class="nav-link">1900 6750</a>
+        </div>
+      </div>
+    </nav>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="2000">
+          <img src="images/baner.webp" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="images/banner2.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="images/banner3.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <section class="service bg-primary text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 card bg-primary text-light border-0 py-4">
+            <img src="images/freeshipping.webp" alt="...">
+            <div class="card-body pb-0 px-0">
+              <h5 class="card-title">MIỄN PHÍ GIAO HÀNG</h5>
+              <p class="card-text">Miễn phí ship với các đơn hàng >499K</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 card bg-primary text-light border-0 py-4">
+            <img src="images/checkout.webp" alt="...">
+            <div class="card-body pb-0 px-0">
+              <h5 class="card-title">THANH TOAN COD</h5>
+              <p class="card-text">Thanh toán khi nhận hàng (COD)</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 card bg-primary text-light border-0 py-4">
+            <img src="images/customervip.webp" alt="...">
+            <div class="card-body pb-0 px-0">
+              <h5 class="card-title">KHÁCH HÀNG VIP</h5>
+              <p class="card-text">Ưu đãi giành cho khách hàng VIP</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 card bg-primary text-light border-0 py-4">
+            <img src="images/guarantee.webp" alt="...">
+            <div class="card-body pb-0 px-0">
+              <h5 class="card-title">HỖ TRỢ BẢO HÀNH</h5>
+              <p class="card-text">Đổi, sửa đồ tại tất cả store</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+  <article>
+    <section class="product-hot bg-body">
+      <div class="container" id="myTab" role="tablist">
+        <div class="row">
+          <div class="section-tittle col-lg-5 col-12 text-center text-lg-start position-relative">
+            <div class="d-none d-lg-block section-decoration"></div>
+            SẢN PHẨM HOT
+          </div>
+          <div class="col-lg-7 col-12">
+            <div class="row my-4 d-flex  align-items-center">
+              <div class="col-1"><i class="fa-solid fa-arrow-left"></i></div>
+              <div class="col-10 catalog-btn-body d-flex justify-content-evenly">
+
+                <button class="me-1 btn bg-primary text-light text-nowrap border-0 active" id="home-tab"
+                  data-bs-toggle="tab" data-bs-target="#tab1" aria-controls="home-tab-pane" aria-selected="true">Thời
+                  trang nam</button>
+                <button class="me-1 btn  bg-body text-nowrap border-0" id="profile-tab" data-bs-toggle="tab"
+                  data-bs-target="#tab2" type="button" role="tab" aria-controls="profile-tab-pane"
+                  aria-selected="false">Thời trang nữ</button>
+                <button class="me-1 btn  bg-body text-nowrap border-0" id="profile-tab" data-bs-toggle="tab"
+                  data-bs-target="#tab3" type="button" role="tab" aria-controls="profile-tab-pane"
+                  aria-selected="false">Thời trang Unisex</button>
+              </div>
+              <div class="col-1"><i class="fa-solid fa-arrow-right"></i></div>
+
+            </div>
+          </div>
+          <script>
+            var catalog_btns = document.getElementsByClassName('catalog-btn-body');
+            catalog_btns = Array.from(catalog_btns);
+            catalog_btns.forEach(a => {
+              Array.from(a.children).forEach(b => {
+                b.addEventListener('click', function () {
+                  var otherbtn = Array.from(b.parentElement.children);
+                  otherbtn.forEach(c => {
+                    c.classList.remove('bg-primary', 'text-light');
+                    c.classList.add('bg-body');
+                  });
+                  b.classList.remove('bg-body');
+                  b.classList.add('bg-primary', 'text-light');
+                });
+              })
+            });
+            var catalog_btns = document.getElementsByClassName('catalog-btn-light');
+            catalog_btns = Array.from(catalog_btns);
+            catalog_btns.forEach(a => {
+              Array.from(a.children).forEach(b => {
+                b.addEventListener('click', function () {
+                  var otherbtn = Array.from(b.parentElement.children);
+                  otherbtn.forEach(c => {
+                    c.classList.remove('bg-primary', 'text-light');
+                    c.classList.add('bg-light');
+                  });
+                  b.classList.remove('bg-light');
+                  b.classList.add('bg-primary', 'text-light');
+                });
+              })
+            });
+          </script>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+              <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                  <div class="card bg-body border-0">
+                    <div class="card-header p-0 bg-body border-0 position-relative">
+                      <a href="detail.html"><img src="images/producthot1.webp" class="card-img-top rounded-3"
+                          alt="..."></a>
+                      <a href="cart.html">
+                        <button class="addtocart-product rounded-bottom-3 border-0 bg-addtocart hover:bg-primary">
+                          <i class="fa-solid fa-basket-shopping fs-5 text-light"></i>
+                          Thêm vào giỏ hàng
+                        </button>
+                      </a>
+                    </div>
+                    <div class="card-body px-0">
+                      <a class="card-title product-tittle" href="detail.html">Áo len nữ</a>
+                      <div class="card-text d-flex gap-2 align-items-center">
+                        <p class="price-product text-primary">100.000<span class="text-decoration-underline">đ</span>
+                        </p>
+                        <p class="price-product-old text-decoration-line-through">120.000<span
+                            class="text-decoration-underline">đ</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 d-sm-block d-none">
+                  <div class="card bg-body border-0">
+                    <div class="card-header p-0 bg-body border-0 position-relative">
+                      <img src="images/producthot2.webp" class="card-img-top rounded-3" alt="...">
+                      <a href="cart.html">
+                        <button class="addtocart-product rounded-bottom-3 border-0 bg-addtocart hover:bg-primary">
+                          <i class="fa-solid fa-basket-shopping fs-5 text-light"></i>
+                          Thêm vào giỏ hàng
+                        </button>
+                      </a>
+                    </div>
+                    <div class="card-body px-0">
+                      <a class="card-title product-tittle">Áo len nữ</a>
+                      <div class="card-text d-flex gap-2 align-items-center">
+                        <p class="price-product text-primary">100.000<span class="text-decoration-underline">đ</span>
+                        </p>
+                        <p class="price-product-old text-decoration-line-through">120.000<span
+                            class="text-decoration-underline">đ</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 d-md-block d-none">
+                  <div class="card bg-body border-0">
+                    <div class="card-header p-0 bg-body border-0 position-relative">
+                      <img src="images/producthot3.webp" class="card-img-top rounded-3" alt="...">
+                      <a href="cart.html">
+                        <button class="addtocart-product rounded-bottom-3 border-0 bg-addtocart hover:bg-primary">
+                          <i class="fa-solid fa-basket-shopping fs-5 text-light"></i>
+                          Thêm vào giỏ hàng
+                        </button>
+                      </a>
+                    </div>
+                    <div class="card-body px-0">
+                      <a class="card-title product-tittle">Áo len nữ</a>
+                      <div class="card-text d-flex gap-2 align-items-center">
+                        <p class="price-product text-primary">100.000<span class="text-decoration-underline">đ</span>
+                        </p>
+                        <p class="price-product-old text-decoration-line-through">120.000<span
+                            class="text-decoration-underline">đ</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 d-lg-block d-none">
+                  <div class="card bg-body border-0">
+                    <div class="card-header p-0 bg-body border-0 position-relative">
+                      <img src="images/producthot4.webp" class="card-img-top rounded-3" alt="...">
+                      <a href="cart.html">
+                        <button class="addtocart-product rounded-bottom-3 border-0 bg-addtocart hover:bg-primary">
+                          <i class="fa-solid fa-basket-shopping fs-5 text-light"></i>
+                          Thêm vào giỏ hàng
+                        </button>
+                      </a>
+                    </div>
+                    <div class="card-body px-0">
+                      <a class="card-title product-tittle">Áo len nữ</a>
+                      <div class="card-text d-flex gap-2 align-items-center">
+                        <p class="price-product text-primary">100.000<span class="text-decoration-underline">đ</span>
+                        </p>
+                        <p class="price-product-old text-decoration-line-through">120.000<span
+                            class="text-decoration-underline">đ</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">2</div>
+
+            <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">3</div>
+          </div>
+
+          <div class="row ms-1 w-100">
+            <button class="read-more btn btn-lg bg-secondary text-light hover:bg-primary mx-auto">Xem tất cả</button>
+          </div>
+        </div>
+    </section>
+    <section class="product-hot bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="section-tittle col-lg-5 col-12 text-center text-lg-start position-relative">
+            <div class="d-none d-lg-block section-decoration"></div>
+            HÀNG MỚI VỀ
+          </div>
+          <div class="col-lg-7 col-12">
+            <div class="row my-4 d-flex  align-items-center">
+              <div class="col-1"><i class="fa-solid fa-arrow-left"></i></div>
+              <div class="col-2">
+                <button class="me-1 btn bg-primary text-light text-nowrap border-0">Quần áo</button>
+              </div>
+              <div class="col-2">
+                <button class="me-1 btn  bg-light text-nowrap border-0">Phụ kiện</button>
+              </div>
+              <div class="col-2">
+                <button class="me-1 btn  bg-light text-nowrap border-0">Giày dép</button>
+              </div>
+              <div class="col-2">
+                <button class="me-1 btn  bg-light text-nowrap border-0">Bé nam</button>
+              </div>
+              <div class="col-2">
+                <button class="me-1 btn bg-light text-nowrap border-0">Bé nữ</button>
+              </div>
+              <div class="col-1"><i class="fa-solid fa-arrow-right"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 d-md-block d-none">
+            <img src="images/product_new.webp" height="95%" width="100%" alt="">
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="row">
+              <div class="col-lg-6 col-md-12">
+                <div class="card bg-light border-0">
+                  <div class="card-header p-0 bg-light border-0 position-relative">
+                    <a href="detail.html"><img src="images/productnew1.webp" class="card-img-top rounded-3"
+                        alt="..."></a>
+                    <button class="addtocart-product rounded-bottom-3 border-0 bg-addtocart hover:bg-primary">
+                      <i class="fa-solid fa-basket-shopping fs-5 text-light"></i>
+                      Thêm vào giỏ hàng
+                    </button>
+                  </div>
+                  <div class="card-body px-0">
+                    <a class="card-title product-tittle" href="detail.html">Áo len nữ</a>
+                    <div class="card-text d-flex gap-2 align-items-center">
+                      <p class="price-product text-primary">100.000<span class="text-decoration-underline">đ</span></p>
+                      <p class="price-product-old text-decoration-line-through">120.000<span
+                          class="text-decoration-underline">đ</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12  d-lg-block d-none">
+                <div class="card bg-light border-0">
+                  <div class="card-header p-0 bg-light border-0 position-relative">
+                    <img src="images/productnew2.webp" class="card-img-top rounded-3" alt="...">
+                    <button class="addtocart-product rounded-bottom-3 border-0 bg-addtocart hover:bg-primary">
+                      <i class="fa-solid fa-basket-shopping fs-5 text-light"></i>
+                      Thêm vào giỏ hàng
+                    </button>
+                  </div>
+                  <div class="card-body px-0">
+                    <a class="card-title product-tittle">Áo len nữ</a>
+                    <div class="card-text d-flex gap-2 align-items-center">
+                      <p class="price-product text-primary">100.000<span class="text-decoration-underline">đ</span></p>
+                      <p class="price-product-old text-decoration-line-through">120.000<span
+                          class="text-decoration-underline">đ</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 d-lg-block d-none">
+                <div class="card bg-light border-0">
+                  <div class="card-header p-0 bg-light border-0 position-relative">
+                    <img src="images/productnew3.webp" class="card-img-top rounded-3" alt="...">
+                    <button class="addtocart-product rounded-bottom-3 border-0 bg-addtocart hover:bg-primary">
+                      <i class="fa-solid fa-basket-shopping fs-5 text-light"></i>
+                      Thêm vào giỏ hàng
+                    </button>
+                  </div>
+                  <div class="card-body px-0">
+                    <a class="card-title product-tittle">Áo len nữ</a>
+                    <div class="card-text d-flex gap-2 align-items-center">
+                      <p class="price-product text-primary">100.000<span class="text-decoration-underline">đ</span></p>
+                      <p class="price-product-old text-decoration-line-through">120.000<span
+                          class="text-decoration-underline">đ</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 d-lg-block d-none">
+                <div class="card bg-light border-0">
+                  <div class="card-header p-0 bg-light border-0 position-relative">
+                    <img src="images/productnew4.webp" class="card-img-top rounded-3" alt="...">
+                    <button class="addtocart-product rounded-bottom-3 border-0 bg-addtocart hover:bg-primary">
+                      <i class="fa-solid fa-basket-shopping fs-5 text-light"></i>
+                      Thêm vào giỏ hàng
+                    </button>
+                  </div>
+                  <div class="card-body px-0">
+                    <a class="card-title product-tittle">Áo len nữ</a>
+                    <div class="card-text d-flex gap-2 align-items-center">
+                      <p class="price-product text-primary">100.000<span class="text-decoration-underline">đ</span></p>
+                      <p class="price-product-old text-decoration-line-through">120.000<span
+                          class="text-decoration-underline">đ</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="product-hot bg-secondary">
+      <div class="container">
+        <div class="row">
+          <div class="section-tittle col-12 text-center text-lg-start position-relative text-light">
+            <div class="d-none d-lg-block section-decoration"></div>
+            SALE ĐỒNG GIÁ - ĐỪNG LO VỀ GIÁ
+          </div>
+        </div>
+        <img src="images/baner-same-price.webp" height="95%" width="100%" class="mb-4" alt="">
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card bg-secondary border-0">
+              <div class="card-header p-0 bg-secondary border-0 position-relative">
+                <img src="images/productsameprice1.webp" class="card-img-top rounded-3" alt="...">
+                <button class="addtocart-product rounded-bottom-3 border-0 bg-addtocart hover:bg-primary">
+                  <i class="fa-solid fa-basket-shopping fs-5 text-light"></i>
+                  Thêm vào giỏ hàng
+                </button>
+              </div>
+              <div class="card-body px-0">
+                <a class="card-title product-tittle text-light">Áo len nữ</a>
+                <div class="card-text d-flex gap-2 align-items-center">
+                  <p class="price-product text-primary">100.000<span class="text-decoration-underline">đ</span></p>
+                  <p class="price-product-old text-decoration-line-through  text-light">120.000<span
+                      class="text-decoration-underline">đ</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 d-sm-block d-none">
+            <div class="card bg-secondary border-0">
+              <div class="card-header p-0 bg-secondary border-0 position-relative">
+                <img src="images/productsameprice2.webp" class="card-img-top rounded-3" alt="...">
+                <button class="addtocart-product rounded-bottom-3 border-0 bg-addtocart hover:bg-primary">
+                  <i class="fa-solid fa-basket-shopping fs-5 text-light"></i>
+                  Thêm vào giỏ hàng
+                </button>
+              </div>
+              <div class="card-body px-0">
+                <a class="card-title product-tittle text-light">Áo len nữ</a>
+                <div class="card-text d-flex gap-2 align-items-center">
+                  <p class="price-product text-primary">100.000<span class="text-decoration-underline">đ</span></p>
+                  <p class="price-product-old text-decoration-line-through text-light">120.000<span
+                      class="text-decoration-underline">đ</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 d-md-block d-none">
+            <div class="card bg-secondary border-0">
+              <div class="card-header p-0 bg-secondary border-0 position-relative">
+                <img src="images/productsameprice3.webp" class="card-img-top rounded-3" alt="...">
+                <button class="addtocart-product rounded-bottom-3 border-0 bg-addtocart hover:bg-primary">
+                  <i class="fa-solid fa-basket-shopping fs-5 text-light"></i>
+                  Thêm vào giỏ hàng
+                </button>
+              </div>
+              <div class="card-body px-0">
+                <a class="card-title product-tittle text-light">Áo len nữ</a>
+                <div class="card-text d-flex gap-2 align-items-center">
+                  <p class="price-product text-primary">100.000<span class="text-decoration-underline">đ</span></p>
+                  <p class="price-product-old text-decoration-line-through text-light">120.000<span
+                      class="text-decoration-underline">đ</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 d-lg-block d-none">
+            <div class="card bg-secondary border-0">
+              <div class="card-header p-0 bg-secondary border-0 position-relative">
+                <img src="images/producthot1.webp" class="card-img-top rounded-3" alt="...">
+                <button class="addtocart-product rounded-bottom-3 border-0 bg-addtocart hover:bg-primary">
+                  <i class="fa-solid fa-basket-shopping fs-5 text-light"></i>
+                  Thêm vào giỏ hàng
+                </button>
+              </div>
+              <div class="card-body px-0">
+                <a class="card-title product-tittle text-light">Áo len nữ</a>
+                <div class="card-text d-flex gap-2 align-items-center">
+                  <p class="price-product text-primary">100.000<span class="text-decoration-underline">đ</span></p>
+                  <p class="price-product-old text-decoration-line-through text-light">120.000<span
+                      class="text-decoration-underline">đ</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row ms-1 w-100">
+          <button class="read-more btn btn-lg bg-primary text-light mx-auto" id="seeall">Xem tất cả</button>
+        </div>
+      </div>
+    </section>
+    <section class="product-hot bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="section-tittle col-lg-5 col-12 text-center text-lg-start position-relative">
+            <div class="d-none d-lg-block section-decoration"></div>
+            SẢN PHẨM GIÁ TỐT
+          </div>
+          <div class="col-lg-7 col-12">
+            <div class="row my-4 d-flex  align-items-center">
+              <div class="col-1"><i class="fa-solid fa-arrow-left"></i></div>
+              <div class="col-2">
+                <button class="me-1 btn bg-primary text-light text-nowrap border-0">Quần áo</button>
+              </div>
+              <div class="col-2">
+                <button class="me-1 btn  bg-light text-nowrap border-0">Phụ kiện</button>
+              </div>
+              <div class="col-2">
+                <button class="me-1 btn  bg-light text-nowrap border-0">Giày dép</button>
+              </div>
+              <div class="col-2">
+                <button class="me-1 btn  bg-light text-nowrap border-0">Bé nam</button>
+              </div>
+              <div class="col-2">
+                <button class="me-1 btn bg-light text-nowrap border-0">Bé nữ</button>
+              </div>
+              <div class="col-1"><i class="fa-solid fa-arrow-right"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 d-md-block d-none">
+            <img src="images/baner-nice-price.webp" height="95%" width="100%" alt="">
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="row">
+              <div class="col-lg-6 col-md-12">
+                <div class="card bg-light border-0">
+                  <div class="card-header p-0 bg-light border-0 position-relative">
+                    <img src="images/productnew1.webp" class="card-img-top rounded-3" alt="...">
+                    <button class="addtocart-product rounded-bottom-3 border-0 bg-addtocart hover:bg-primary">
+                      <i class="fa-solid fa-basket-shopping fs-5 text-light"></i>
+                      Thêm vào giỏ hàng
+                    </button>
+                  </div>
+                  <div class="card-body px-0">
+                    <a class="card-title product-tittle">Áo len nữ</a>
+                    <div class="card-text d-flex gap-2 align-items-center">
+                      <p class="price-product text-primary">100.000<span class="text-decoration-underline">đ</span></p>
+                      <p class="price-product-old text-decoration-line-through">120.000<span
+                          class="text-decoration-underline">đ</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12  d-lg-block d-none">
+                <div class="card bg-light border-0">
+                  <div class="card-header p-0 bg-light border-0 position-relative">
+                    <img src="images/producthot2.webp" class="card-img-top rounded-3" alt="...">
+                    <button class="addtocart-product rounded-bottom-3 border-0 bg-addtocart hover:bg-primary">
+                      <i class="fa-solid fa-basket-shopping fs-5 text-light"></i>
+                      Thêm vào giỏ hàng
+                    </button>
+                  </div>
+                  <div class="card-body px-0">
+                    <a class="card-title product-tittle">Áo len nữ</a>
+                    <div class="card-text d-flex gap-2 align-items-center">
+                      <p class="price-product text-primary">100.000<span class="text-decoration-underline">đ</span></p>
+                      <p class="price-product-old text-decoration-line-through">120.000<span
+                          class="text-decoration-underline">đ</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 d-lg-block d-none">
+                <div class="card bg-light border-0">
+                  <div class="card-header p-0 bg-light border-0 position-relative">
+                    <img src="images/productsameprice2.webp" class="card-img-top rounded-3" alt="...">
+                    <button class="addtocart-product rounded-bottom-3 border-0 bg-addtocart hover:bg-primary">
+                      <i class="fa-solid fa-basket-shopping fs-5 text-light"></i>
+                      Thêm vào giỏ hàng
+                    </button>
+                  </div>
+                  <div class="card-body px-0">
+                    <a class="card-title product-tittle">Áo len nữ</a>
+                    <div class="card-text d-flex gap-2 align-items-center">
+                      <p class="price-product text-primary">100.000<span class="text-decoration-underline">đ</span></p>
+                      <p class="price-product-old text-decoration-line-through">120.000<span
+                          class="text-decoration-underline">đ</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 d-lg-block d-none">
+                <div class="card bg-light border-0">
+                  <div class="card-header p-0 bg-light border-0 position-relative">
+                    <img src="images/productnew4.webp" class="card-img-top rounded-3" alt="...">
+                    <button class="addtocart-product rounded-bottom-3 border-0 bg-addtocart hover:bg-primary">
+                      <i class="fa-solid fa-basket-shopping fs-5 text-light"></i>
+                      Thêm vào giỏ hàng
+                    </button>
+                  </div>
+                  <div class="card-body px-0">
+                    <a class="card-title product-tittle">Áo len nữ</a>
+                    <div class="card-text d-flex gap-2 align-items-center">
+                      <p class="price-product text-primary">100.000<span class="text-decoration-underline">đ</span></p>
+                      <p class="price-product-old text-decoration-line-through">120.000<span
+                          class="text-decoration-underline">đ</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="product-hot bg-body pb-2">
+      <div class="container">
+        <div class="row">
+          <div class="section-tittle col-lg-12 col-12 text-center text-lg-start position-relative">
+            <div class="d-none d-lg-block section-decoration"></div>
+            TIN TỨC THỜI TRANG
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-12">
+            <div class="card bg-body border-0 mx-4 mb-4">
+              <div class="row">
+                <div class="col-lg-12 col-md-5 card-header p-0 bg-body border-0 position-relative">
+                  <a href="newsdetail.html">
+                    <img src="images/newsnoibat1.webp" class="card-img-top rounded-3" alt="...">
+                  </a>
+                </div>
+                <div class="col-lg-12 col-md-7 pt-0 pt-lg-3 card-body ps-4 px-lg-0">
+                  <a href="newsdetail.html">
+                    <h5 class="card-title product-tittle newslink">Cách phối đồ hè nam</h5>
+                  </a>
+                  <div class="card-text" id="news-card-text">
+                    <p>
+                      <i class="fa-regular fa-user"></i>
+                      Cafein Team |
+                      <i class="fa-regular fa-clock"></i>
+                      Ngày 27/05/2022
+                    </p>
+                    <p class="mb-2">1.Sơ mi hoạ tiết + quần denim + giày sneaker Hãy tranh thủ những
+                      ngày hè để</p>
+                    <a href="" class="fw-bold text-dark newslink">Xem thêm<i
+                        class="fa-solid fa-arrow-right-long text-primary ms-2"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <div class="card bg-body border-0 mx-4 mb-4">
+              <div class="row">
+                <div class="col-lg-12 col-md-5 card-header p-0 bg-body border-0 position-relative">
+                  <a href="newsdetail.html">
+                    <img src="images/newsnoibat2.webp" class="card-img-top rounded-3" alt="...">
+                  </a>
+                </div>
+                <div class="col-lg-12 col-md-7 pt-0 pt-lg-3 card-body ps-4 px-lg-0">
+                  <a href="newsdetail.html">
+                    <h5 class="card-title product-tittle newslink">Cách phối đồ hè nam</h5>
+                  </a>
+                  <div class="card-text" id="news-card-text">
+                    <p>
+                      <i class="fa-regular fa-user"></i>
+                      Cafein Team |
+                      <i class="fa-regular fa-clock"></i>
+                      Ngày 27/05/2022
+                    </p>
+                    <p class="mb-2">1.Sơ mi hoạ tiết + quần denim + giày sneaker Hãy tranh thủ những
+                      ngày hè để</p>
+                    <a href="" class="fw-bold text-dark newslink">Xem thêm<i
+                        class="fa-solid fa-arrow-right-long text-primary ms-2"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <div class="card bg-body border-0 mx-4 mb-4">
+              <div class="row">
+                <div class="col-lg-12 col-md-5 card-header p-0 bg-body border-0 position-relative">
+                  <a href="newsdetail.html">
+                    <img src="images/newsnoibat3.webp" class="card-img-top rounded-3" alt="...">
+                  </a>
+                </div>
+                <div class="col-lg-12 col-md-7 pt-0 pt-lg-3 card-body ps-4 px-lg-0">
+                  <a href="newsdetail.html">
+                    <h5 class="card-title product-tittle newslink">Cách phối đồ hè nam</h5>
+                  </a>
+                  <div class="card-text" id="news-card-text">
+                    <p>
+                      <i class="fa-regular fa-user"></i>
+                      Cafein Team |
+                      <i class="fa-regular fa-clock"></i>
+                      Ngày 27/05/2022
+                    </p>
+                    <p class="mb-2">1.Sơ mi hoạ tiết + quần denim + giày sneaker Hãy tranh thủ những
+                      ngày hè để</p>
+                    <a href="" class="fw-bold text-dark newslink">Xem thêm<i
+                        class="fa-solid fa-arrow-right-long text-primary ms-2"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row align-items-center my-3">
+          <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex  justify-content-center">
+            <a href=""><img src="images/brand1.webp" alt=""></a>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center">
+            <a href=""><img src="images/brand2.webp" alt=""></a>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-md-flex d-none justify-content-center">
+            <a href=""><img src="images/brand3.webp" alt=""></a>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-lg-flex d-none justify-content-center">
+            <a href=""><img src="images/brand4.webp" alt=""></a>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-xl-flex d-none justify-content-center">
+            <a href=""><img src="images/brand5.webp" alt=""></a>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-xl-flex d-none justify-content-center">
+            <a href=""><img src="images/brand6.webp" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-primary search-promotion d-flex align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-12 my-auto ">
+            <h4 class=" fs-6 text-light fw-bold p-0 m-lg-0 mb-2">NHẬP THÔNG TIN KHUYẾN MÃI TỪ CHÚNG TÔI</h4>
+          </div>
+          <div class="col-lg-6 col-12">
+            <form class="d-flex gap-0" role="search">
+              <input class="form-control h-100 mx-0" type="search" placeholder="Nhập email của bạn" aria-label="Search">
+              <button class="btn btn-outline-success h-100 text-light fw-bold  mx-0" type="submit">Gửi</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </article>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-md-7">
+          <img src="images/logo.webp" alt="">
+          <h3 class="text-primary fs-5 my-3">Shop Thời trang và phụ kiện Alena</h3>
+          <div class="row align-items-center mb-3">
+            <div class="col-1">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="col-11">
+              <p class="m-0 ms-2">Tầng 6, Tòa nhà Ladeco, 266 Đội Cấn, Phường Liễu Giai, Quận Ba Đình, TP Hà Nội</p>
+            </div>
+          </div>
+          <div class="row align-items-center mb-3">
+            <div class="col-1">
+              <i class="fa-solid fa-clock"></i>
+            </div>
+            <div class="col-11">
+              <p class="m-0 ms-2">Giờ làm việc: Từ 9:00 đến 22:00 các ngày trong tuần từ Thứ 2 đến Chủ nhật</p>
+            </div>
+          </div>
+          <div class="row align-items-center mb-3">
+            <div class="col-1">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="col-11">
+              <p class=" m-0 ms-2">Hotline</p>
+              <h3 class="text-primary fs-5 m-0 ms-2">1900 6750</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-5">
+          <div class="text-light fw-bold mt-2">Về chúng tôi</div>
+          <ul class="p-0 mt-3">
+            <li class="mb-2"><a href="">Trang chủ</a></li>
+            <li class="mb-2"><a href="">Sản phẩm áo</a></li>
+            <li class="mb-2"><a href="">Quấn áo</a></li>
+            <li class="mb-2"><a href="">Phụ kiện</a></li>
+            <li class="mb-2"><a href="">Giới thiệu</a></li>
+            <li class="mb-2"><a href="">Liên hệ</a></li>
+            <li class="mb-2"><a href="">Tin tức</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-7">
+          <div class="text-light fw-bold mt-2">Hỗ trợ khách hàng</div>
+          <ul class="p-0 mt-3">
+            <li class="mb-2"><a href="">Chính sách đối tác</a></li>
+            <li class="mb-2"><a href="">Chính sách đổi trả</a></li>
+            <li class="mb-2"><a href="">Chính sách thanh toán</a></li>
+            <li class="mb-2"><a href="">Chính sách giao hàng</a></li>
+            <li class="mb-2"><a href="">Khiếu nại</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-5">
+          <div class="text-light fw-bold mt-2">Dịch vụ</div>
+          <ul class="p-0 mt-3">
+            <li class="mb-2"><a href="">Tư vấn</a></li>
+            <li class="mb-2"><a href="">Mua hàng</a></li>
+            <li class="mb-2"><a href="">Giao hàng</a></li>
+            <li class="mb-2"><a href="">Khuyến mãi</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="offset-xl-10 col-xl-2 offset-lg-9 col-lg-3 offset-md-7 col-md-5">
+          <i class="fa-brands fa-youtube me-1"></i>
+          <i class="fa-brands fa-instagram mx-1"></i>
+          <i class="fa-brands fa-facebook-f mx-1"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://kit.fontawesome.com/b1f196da8e.js" crossorigin="anonymous"></script>
+  <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="javascipt.js"></script>
+</body>
+
+</html>

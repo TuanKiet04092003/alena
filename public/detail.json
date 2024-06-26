@@ -1,0 +1,177 @@
+{
+    "product": {
+        "id": 1,
+        "code_product": "sp001",
+        "name": "\u00c1o thun nam - Palaroid",
+        "price": 320000,
+        "priceold": 350000,
+        "description": "",
+        "id_category": 4,
+        "view": 812,
+        "sold": 75,
+        "hide": 0
+    },
+    "inventories": [
+        {
+            "id": 1,
+            "id_product": 1,
+            "id_size": 1,
+            "id_color": 1,
+            "quantity": 45
+        },
+        {
+            "id": 2,
+            "id_product": 1,
+            "id_size": 2,
+            "id_color": 1,
+            "quantity": 27
+        },
+        {
+            "id": 3,
+            "id_product": 1,
+            "id_size": 3,
+            "id_color": 1,
+            "quantity": 62
+        },
+        {
+            "id": 4,
+            "id_product": 1,
+            "id_size": 4,
+            "id_color": 1,
+            "quantity": 31
+        },
+        {
+            "id": 5,
+            "id_product": 1,
+            "id_size": 5,
+            "id_color": 1,
+            "quantity": 19
+        },
+        {
+            "id": 6,
+            "id_product": 1,
+            "id_size": 6,
+            "id_color": 1,
+            "quantity": 38
+        },
+        {
+            "id": 7,
+            "id_product": 1,
+            "id_size": 1,
+            "id_color": 3,
+            "quantity": 17
+        },
+        {
+            "id": 8,
+            "id_product": 1,
+            "id_size": 2,
+            "id_color": 3,
+            "quantity": 9
+        },
+        {
+            "id": 9,
+            "id_product": 1,
+            "id_size": 3,
+            "id_color": 3,
+            "quantity": 25
+        },
+        {
+            "id": 10,
+            "id_product": 1,
+            "id_size": 4,
+            "id_color": 3,
+            "quantity": 53
+        },
+        {
+            "id": 11,
+            "id_product": 1,
+            "id_size": 5,
+            "id_color": 3,
+            "quantity": 41
+        },
+        {
+            "id": 12,
+            "id_product": 1,
+            "id_size": 6,
+            "id_color": 3,
+            "quantity": 77
+        }
+    ],
+    "sizes": [
+        {
+            "id": 1,
+            "code_size": "XS",
+            "height": "",
+            "weight": ""
+        },
+        {
+            "id": 2,
+            "code_size": "S",
+            "height": "",
+            "weight": ""
+        },
+        {
+            "id": 3,
+            "code_size": "M",
+            "height": "",
+            "weight": ""
+        },
+        {
+            "id": 4,
+            "code_size": "L",
+            "height": "",
+            "weight": ""
+        },
+        {
+            "id": 5,
+            "code_size": "XL",
+            "height": "",
+            "weight": ""
+        },
+        {
+            "id": 6,
+            "code_size": "XXL",
+            "height": "",
+            "weight": ""
+        }
+    ],
+    "imagesColors": [
+        {
+            "id": 1,
+            "image": "images\/sp001_black.jpeg",
+            "id_product": 1,
+            "id_color": 1,
+            "is_main": 1
+        },
+        {
+            "id": 2,
+            "image": "images\/sp001_brown.jpeg",
+            "id_product": 1,
+            "id_color": 3,
+            "is_main": 0
+        }
+    ],
+    "imagesDetail": [
+        {
+            "id": 3,
+            "image": "images\/sp001_detail1.jpeg",
+            "id_product": 1,
+            "id_color": 0,
+            "is_main": 0
+        },
+        {
+            "id": 4,
+            "image": "images\/sp001_detail2.jpeg",
+            "id_product": 1,
+            "id_color": 0,
+            "is_main": 0
+        },
+        {
+            "id": 5,
+            "image": "images\/sp001_detail3.jpeg",
+            "id_product": 1,
+            "id_color": 0,
+            "is_main": 0
+        }
+    ]
+}
